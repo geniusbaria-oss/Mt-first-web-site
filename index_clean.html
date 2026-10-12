@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#050913">
+<title>Baria Genius | Portfolio</title>
+<meta name="description" content="Baria Genius — web development, trading, learning and creative projects.">
+<style>
+:root{--bg:#050913;--panel:#091321;--panel2:#0b1727;--line:#1a3049;--text:#eef5ff;--muted:#a8b7cb;--blue:#16a5ff;--violet:#7357ff;--cyan:#42e4ff}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 78% 10%,#10153a 0,transparent 33%),radial-gradient(ellipse at 8% 55%,#061c2a 0,transparent 30%),var(--bg);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.6}a{color:inherit;text-decoration:none}.wrap{width:min(1120px,92%);margin:auto}.nav{position:sticky;top:0;z-index:20;background:#050913eF;border-bottom:1px solid #18304a;backdrop-filter:blur(16px)}.navin{height:68px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{font-weight:850;font-size:1.25rem;letter-spacing:-.5px}.brand b{background:linear-gradient(110deg,var(--blue),var(--violet));color:transparent;background-clip:text}.links{display:flex;gap:28px;color:#c8d5e7;font-size:.92rem}.links a:hover,.links a.active{color:var(--cyan)}.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;border:1px solid #2479bd;border-radius:999px;padding:11px 18px;font-weight:700;font-size:.9rem;background:linear-gradient(105deg,#079df7,#554cff);box-shadow:0 8px 28px #087be52b;transition:.2s}.btn:hover{transform:translateY(-2px);filter:brightness(1.1)}.btn.ghost{background:transparent;border-color:#4261a4;box-shadow:none}.menu{display:none;background:none;border:1px solid var(--line);color:white;border-radius:10px;padding:8px 11px;font-size:1.2rem}
+.hero{padding:76px 0 66px;display:grid;grid-template-columns:1.08fr .92fr;align-items:center;gap:42px;min-height:480px}.eyebrow{display:inline-flex;align-items:center;gap:8px;border:1px solid #153653;background:#071827;border-radius:999px;padding:6px 13px;color:var(--cyan);font-size:.85rem}.dot{width:7px;height:7px;border-radius:50%;background:#28e4a6;box-shadow:0 0 12px #28e4a6}.hero h1{font-size:clamp(2.7rem,6vw,5rem);line-height:1.02;letter-spacing:-3px;margin:20px 0 12px}.gradient{background:linear-gradient(100deg,#12aaff,#6b5cff 72%);color:transparent;background-clip:text}.roles{font-weight:700;color:#d9e7f9;font-size:1.08rem}.roles span{color:var(--blue);padding:0 8px}.intro{max-width:540px;color:var(--muted);margin:17px 0 24px}.actions{display:flex;gap:12px;flex-wrap:wrap}.socials{display:flex;gap:10px;margin-top:24px}.socials a{width:39px;height:39px;display:grid;place-items:center;border:1px solid var(--line);border-radius:50%;background:#0a1625;color:#d6e7fa;font-weight:800}.socials a:hover{border-color:var(--blue);color:var(--cyan)}
+.art{min-height:330px;position:relative;display:grid;place-items:center}.orb{width:min(370px,90%);aspect-ratio:1;border-radius:48% 52% 56% 44%;background:radial-gradient(circle at 30% 25%,#244b88,transparent 40%),linear-gradient(145deg,#0c2039,#10102e 62%,#061522);border:1px solid #27476c;box-shadow:inset 0 0 60px #1774a32a,0 25px 80px #0008;display:grid;place-items:center;transform:rotate(-5deg)}.monogram{font-size:clamp(5rem,12vw,8rem);font-weight:950;letter-spacing:-12px;background:linear-gradient(140deg,#fff,#43caff 42%,#7864ff 80%);color:transparent;background-clip:text;filter:drop-shadow(0 0 25px #238fff65);transform:rotate(5deg)}.orbit{position:absolute;border:1px solid #2b6aa5;border-radius:50%;width:110%;height:58%;transform:rotate(-28deg)}.float{position:absolute;background:#091525eF;border:1px solid #25415f;border-radius:14px;padding:11px 15px;box-shadow:0 15px 30px #0005;color:#dcecff;font-size:.85rem}.float strong{display:block;color:var(--cyan)}.f1{top:12%;left:0}.f2{right:0;bottom:12%}
+section{padding:42px 0;scroll-margin-top:75px}.section-title{font-size:1.65rem;letter-spacing:-.6px;margin:0 0 22px;display:flex;align-items:center;gap:11px}.section-title i{font-style:normal;color:var(--blue)}.aboutgrid{display:grid;grid-template-columns:1fr 1fr;gap:18px}.card{border:1px solid var(--line);border-radius:18px;background:linear-gradient(145deg,#0a1625eF,#060d18);padding:24px;box-shadow:0 15px 40px #0002}.card p{color:var(--muted);margin:0}.facts{display:grid;gap:12px;margin-top:20px;color:#d5e5f7;font-size:.93rem}.fact b{color:var(--cyan);margin-right:9px}.skills{display:grid;grid-template-columns:repeat(4,1fr);gap:13px}.skill{border:1px solid var(--line);background:linear-gradient(145deg,#0b1a2b,#07101c);padding:18px 12px;border-radius:15px;text-align:center;transition:.2s}.skill:hover,.project:hover{transform:translateY(-4px);border-color:#286ca1}.skill .ico{font-size:1.7rem}.skill h3{font-size:.96rem;margin:7px 0 1px}.skill p{color:var(--muted);font-size:.82rem;margin:0}.projectgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.project{border:1px solid var(--line);border-radius:16px;overflow:hidden;background:linear-gradient(150deg,#0a1726,#060c16);transition:.2s}.thumb{height:130px;display:grid;place-items:center;background:radial-gradient(circle at 70% 20%,#273f83,transparent 35%),linear-gradient(135deg,#102d45,#0c102b);font-size:2.8rem;border-bottom:1px solid var(--line)}.projectbody{padding:17px}.project h3{margin:0 0 6px;font-size:1.02rem}.project p{margin:0 0 15px;color:var(--muted);font-size:.9rem}.tag{font-size:.75rem;color:#8eeaff;border:1px solid #214a65;border-radius:999px;padding:4px 9px;display:inline-block}.contactbox{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:25px 28px;border:1px solid #20527a;border-radius:18px;background:linear-gradient(100deg,#0a1b2b,#0b1028)}.contactbox h2{margin:0 0 4px}.contactbox p{margin:0;color:var(--muted)}footer{padding:25px 0 32px;color:#8093ab;font-size:.84rem}.footin{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap;border-top:1px solid #15263a;padding-top:20px}.reveal{opacity:0;transform:translateY(16px);transition:opacity .65s,transform .65s}.reveal.show{opacity:1;transform:none}
+@media(max-width:760px){.links{display:none;position:absolute;top:68px;left:0;right:0;background:#050913;border-bottom:1px solid var(--line);padding:18px 4%;flex-direction:column;gap:14px}.links.open{display:flex}.menu{display:block}.nav .btn{display:none}.hero{grid-template-columns:1fr;padding:54px 0 35px;gap:8px}.hero h1{letter-spacing:-2px}.art{min-height:280px}.orb{width:250px}.orbit{width:100%}.f1{left:2%;top:5%}.f2{right:2%;bottom:5%}.aboutgrid{grid-template-columns:1fr}.skills{grid-template-columns:repeat(2,1fr)}.projectgrid{grid-template-columns:1fr}.contactbox{align-items:flex-start;flex-direction:column}.section-title{font-size:1.45rem}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important}.reveal{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<header class="nav"><div class="wrap navin">
+<a class="brand" href="#home">G<span class="gradient">B</span> <b>Baria Genius</b></a>
+<nav class="links" id="navlinks"><a class="active" href="#home">Home</a><a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#contact">Contact</a></nav>
+<a class="btn ghost" href="#contact">✉ Contact Me</a><button class="menu" id="menubtn" aria-label="Open menu">☰</button>
+</div></header>
+<main>
+<div class="wrap hero" id="home">
+<div class="reveal">
+<div class="eyebrow"><span class="dot"></span> Hello, I'm 👋</div>
+<h1>Baria <span class="gradient">Genius</span></h1>
+<div class="roles">Web Developer <span>|</span> Trader <span>|</span> Learner</div>
+<p class="intro">I enjoy building creative websites, exploring technology, learning about markets, and improving a little every day. My goal is to turn ideas into useful digital projects.</p>
+<div class="actions"><a class="btn" href="#projects">Explore My Projects ↗</a><a class="btn ghost" href="#contact">✉ Let's Connect</a></div>
+<div class="socials"><a href="#contact" aria-label="GitHub">GH</a><a href="#contact" aria-label="Instagram">IG</a><a href="#contact" aria-label="YouTube">▶</a><a href="#contact" aria-label="Telegram">➤</a></div>
+</div>
+<div class="art reveal" aria-label="Decorative GB monogram"><div class="orbit"></div><div class="orb"><div class="monogram">GB</div></div><div class="float f1">⚡ <strong>Always Learning</strong>One step at a time</div><div class="float f2">✦ <strong>Build • Learn • Grow</strong>Creating my future</div></div>
+</div>
+<section id="about"><div class="wrap">
+<h2 class="section-title"><i>●</i> About Me</h2>
+<div class="aboutgrid">
+<div class="card reveal"><p>I'm Baria Genius, a B.Pharm student (Semester 5) at GTU. I'm interested in web development, trading, and creative digital work. I believe consistency, discipline, and curiosity can turn small steps into meaningful progress.</p><div class="facts"><div class="fact"><b>▣</b> B.Pharm (Sem 5) — GTU</div><div class="fact"><b>⌖</b> Gujarat, India</div><div class="fact"><b>✦</b> Dream big. Learn daily. Keep building.</div></div></div>
+<div class="card reveal"><h3 style="margin-top:0">My Direction</h3><p>I'm currently learning the fundamentals of HTML, CSS, and JavaScript while developing my own portfolio. I'm also interested in market structure, crypto, and visual editing. This website is a work in progress—more projects coming soon.</p><div style="margin-top:20px"><span class="tag">Curious Mind</span> <span class="tag">Self Improvement</span> <span class="tag">Consistency</span></div></div>
+</div></div></section>
+<section id="skills"><div class="wrap"><h2 class="section-title"><i>ϟ</i> My Skills & Interests</h2>
+<div class="skills">
+<div class="skill reveal"><div class="ico">🌐</div><h3>HTML</h3><p>Beginner</p></div><div class="skill reveal"><div class="ico">🎨</div><h3>CSS</h3><p>Beginner</p></div><div class="skill reveal"><div class="ico">⚙️</div><h3>JavaScript</h3><p>Learning</p></div><div class="skill reveal"><div class="ico">🐍</div><h3>Python</h3><p>Learning</p></div>
+<div class="skill reveal"><div class="ico">📈</div><h3>Trading</h3><p>Learning & practice</p></div><div class="skill reveal"><div class="ico">₿</div><h3>Crypto</h3><p>Market research</p></div><div class="skill reveal"><div class="ico">🎬</div><h3>Editing</h3><p>Exploring</p></div><div class="skill reveal"><div class="ico">🧪</div><h3>Pharmacy</h3><p>B.Pharm student</p></div>
+</div></div></section>
+<section id="projects"><div class="wrap"><h2 class="section-title"><i>⌘</i> Featured Projects</h2>
+<div class="projectgrid">
+<article class="project reveal"><div class="thumb">💻</div><div class="projectbody"><h3>Personal Portfolio</h3><p>A responsive personal website to introduce myself, share interests, and showcase future work.</p><span class="tag">HTML • CSS • JS</span></div></article>
+<article class="project reveal"><div class="thumb">📊</div><div class="projectbody"><h3>Trading Journal</h3><p>A planned project to record trade ideas, entry reasons, risk, and lessons learned.</p><span class="tag">Planned Project</span></div></article>
+<article class="project reveal"><div class="thumb">₿</div><div class="projectbody"><h3>Crypto Watchlist</h3><p>A future dashboard concept for tracking selected crypto markets and chart observations.</p><span class="tag">Planned Project</span></div></article>
+</div></div></section>
+<section id="contact"><div class="wrap"><div class="contactbox reveal"><div><h2>Let's Build Something Great</h2><p>Have an idea, a project, or just want to say hello? Get in touch.</p></div><a class="btn" href="mailto:geniusbaria@gmail.com?subject=Hello%20Baria">Send Me an Email ↗</a></div></div></section>
+</main>
+<footer><div class="wrap footin"><span>© <span id="year"></span> Baria Genius. Made with curiosity.</span><span>Dream • Learn • Build • Repeat</span></div></footer>
+<script>
+const menu=document.getElementById('menubtn'),links=document.getElementById('navlinks');
+menu.addEventListener('click',()=>{links.classList.toggle('open');menu.textContent=links.classList.contains('open')?'✕':'☰'});
+links.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{links.classList.remove('open');menu.textContent='☰'}));
+document.getElementById('year').textContent=new Date().getFullYear();
+const obs=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('show');obs.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
+const sections=[...document.querySelectorAll('main section, #home')],navlinks=[...links.querySelectorAll('a')];
+window.addEventListener('scroll',()=>{let current='home';sections.forEach(s=>{if(window.scrollY>=s.offsetTop-130)current=s.id});navlinks.forEach(a=>a.classList.toggle('active',a.getAttribute('href')==='#'+current))});
+</script>
+</body></html>
